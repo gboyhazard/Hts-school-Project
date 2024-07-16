@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Registration form</h1>
+    <form action="index.html" method="get">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAb1JREFUSEvN1k3ITUEYB/DfK18lJcmOhCyUKCs7lGJhQcpGoXyUlJ0US5LsUD42rFCilLKwYMVCCYWVfKWUkgUbCTN1jt6ue95nzts5XbOd5/x/M819Zu6YEY2xEbkmA0/BNiyvFv0SN/C7zSbawmtwBcsGkFfYiceleBt4Pe5iekP4d2zAoxK8FJ6F95gbhH7AUvyI8FJ4Ly5FYdV8Pv+bUW0pfAH7o7Bq/jQOR7Wl8EXsi8Kq+fM4ENWWwkdxPAqr5o/gVFRbCueefRGFVb28JLXWm6i2FM45l7ErCDyDQxGa59vAM6obanNDcF7YHvzqGq4XugNbxvX0J1zD7RKwrmmz4za5Ye1/Dy/A1nQjrUiPxKLUWlMHtvQz/fDepiN4hlv4GG052vFKnMSmKGhg/k51e+VXa+iYCM431TlMa4nW5fmh2J2e0KvDvm+Ct+P6JMHxn+XW2oh7g1nD4Plppe8wswM4R3zBQuT3+u8YBp/FwY7QOuZYOrITEfw5ne28juEnWD0RvBivO0bruNn41nRz5T9zD3uCc2s+b4LX4n5P8Do8aILnYFVP8FN8bYJ7Mv+Nja7M3hYyMvgPElg8H/XErXYAAAAASUVORK5CYII="/>
+        <label for="fnames">First Names Of Learner:</label><br>
+        <div class="input-box">
+        <input type="text" id="fnames" name="fnames" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAb1JREFUSEvN1k3ITUEYB/DfK18lJcmOhCyUKCs7lGJhQcpGoXyUlJ0US5LsUD42rFCilLKwYMVCCYWVfKWUkgUbCTN1jt6ue95nzts5XbOd5/x/M819Zu6YEY2xEbkmA0/BNiyvFv0SN/C7zSbawmtwBcsGkFfYiceleBt4Pe5iekP4d2zAoxK8FJ6F95gbhH7AUvyI8FJ4Ly5FYdV8Pv+bUW0pfAH7o7Bq/jQOR7Wl8EXsi8Kq+fM4ENWWwkdxPAqr5o/gVFRbCueefRGFVb28JLXWm6i2FM45l7ErCDyDQxGa59vAM6obanNDcF7YHvzqGq4XugNbxvX0J1zD7RKwrmmz4za5Ye1/Dy/A1nQjrUiPxKLUWlMHtvQz/fDepiN4hlv4GG052vFKnMSmKGhg/k51e+VXa+iYCM431TlMa4nW5fmh2J2e0KvDvm+Ct+P6JMHxn+XW2oh7g1nD4Plppe8wswM4R3zBQuT3+u8YBp/FwY7QOuZYOrITEfw5ne28juEnWD0RvBivO0bruNn41nRz5T9zD3uCc2s+b4LX4n5P8Do8aILnYFVP8FN8bYJ7Mv+Nja7M3hYyMvgPElg8H/XErXYAAAAASUVORK5CYII="/>
+        <label for="lname">Last Name Of Learner:</label><br>
+        <div class="input-box">
+        <input type="text" id="lname" name="lname" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcpJREFUSEvtl78rRlEYxz9vBikDBrIZDQwkFoVBDGJlovwJBoMBiwx2I1kwUiQLBgtiMAuZpPwYSXG/b/fW6bzn/ni9Rzflqbf7du7z3O+53+f7fU63QE5RyAmXJOBRoBO4DK67ZWxwGmgGDoCLuLo44PmgYMEo0v/FDOA7wUa14ShGgD1XXRzwC1BnFLwC9SnAXcC5lSOmxv4EcG5Uix31qiOg6uq3xaV+twMNCb18Bq6BLyunGugGqhy1N8CDvW6KaxzYzKDcCWDLypN1hmJqP4L8VuDWvG8CyzLqbVrIVqbVpH4xkTQT5oAl38BZmDoFen0DrwFTKTRJE5oDb1GeD6ofgca0/gBiZtsXcFuo8gy4bAQCm/QFPAOsZEEFnoCmyIqVUn0IDGYEVpq8XpznlQLPAjXAMNCTsIFl4D0A3gfObGApM1Jnn+MhJ+HaOqCfGceAqybK6Qei+uJanOntkZiUq3Epm+gaFyXnuQ9gvc1RSp/FyEDcADHXy3njLKNW/a0FPl12+imwBoMOgRbTp+HD7g09rAIaNt56bArIplyCUitKwkeP/4FNWsum2jzoowe51kwQics+Hu8cwyZRXCm2rPx2bt9O33JgaR80UHUWAAAAAElFTkSuQmCC"/>
+        <label for="Gender">Gender:</label><br>
+        <div class="input-box">
+        <input type="text" id="Gender" name="Gender" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAldJREFUSEvF1knojWEUx/HP37QgEkosDAtTZCesKEtDSRlSWFHKkFJkJ1OGhBULQ6GIJCkLC0qZdzIkU8YMG2Vjfo/eq+vtvfc+782//1nd977nOd9znvd5fud06CLr6CKuquDumIIRGJIn/QbPcAs/UgtJBY/CRsxF/wbBP+EctuNpqwRagXtjB1Yiqk2xr9iFzYjfpdYMPBwXMT6FVuJzG7OypN+XrW8EHodrGNAmtLbsNabiZTFOGXgwbiIqbmQvsgN2NH+5rIXvvfxAfqkPVgY+hfktKr2K6bnPFUxr4b8Pa5uBx+JBwvZWBcchiyv4tha7WPGx7Cos6QRwhNyGTWXgXviIvp0Efo6RZeAZuJwADZeqW10LOxqP46F+q+N0Hulk8BxcKILXY2cb4Eg2kk6xNZk27C+C12Xfd0/KajzCxFwSe+YaPTNhbTD2FsGLcDJhcc3lEmbjO3rgdN5EmoVYiNCJf75xtLvrFcDheh7z8nYYTeREpgMLmsSYlOn3nSI4DtoHDKwIP4OoJHpxxIhdi+eivcNQ/CqC4/kgllcEh/vxbBhYip/54VlVEuMAVtf+LyrXmFwyW/XpstwOZxp/H7tLXn7LdiLucIjIHysDRPaL26i62ZJDmU6vqHcoAw9CNPEQ9f9hDzEZn1uB433MWDf+wyAQg2BAXxUraPYto+KQtwltln03v+d/W2FKxTWfPpk4bMlPY7fEBKL3xoC4td1hr54TA8KGXJn6NUggxtuzed+N0aipVb02IY0xvA0rDPRP8gMZ9zjJqoKTgqY4dRn4N/WGah8UBeo9AAAAAElFTkSuQmCC"/>
+        <label for="DOB">Date Of Birth:</label><br>
+        <div class="input-box">
+        <input type="date" id="DOB" name="DOB" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQlJREFUSEvtlssJwkAQhr8ctAIfRwtQQRvwiQXYgTXYgRXYggcL0AJEbUHBm+BRsAbRDBhIQrLrxk2CkDltYPb/dv7dzY5DTuHkxCUOXAbGQBeQcdJ4AWdXZws8/SJR4BawA2pJaRHz9sBIBz4BbYtQT6oJXLyPcMUV4JECVCSHwCEO3HMTjnmAB4DsR1QsDBY0AxqhfGXFKrDJ1RNL+38PNnA6MjWx1QXY1IHC6oBjqntsam04v7C6sDr2dcrscF2B9a803/wVcPumEZgCG4vggFT4ja0D90/GEphnBRZOWs2e8gciYOkGpf2pWq5WCxaeNPETd487QMnSApSHyxJDL2PSwOnVDDLeFiM7H4rEmb8AAAAASUVORK5CYII="/>
+        <label for="grade">Grade of Learner:</label><br>
+        <div class="input-box">
+        <input type="text" id="grade" name="grade" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXZJREFUSEvt1rtKHWEQB/CfSa+PECttRGxiq28QvGEhhryBhZUkoBZJmuQdFFREvOETxM50NhFLEV8gaYOXHdiV9bBH93hWdgsHPhbm/p+Z75vtURP11BTXY4E/oR8XyXet6gQfC/wLYzjG+GvgbiuQL3X0NE5GI+jDX5zm+NHv1p632rbL6942H3gFyyWQrCY6oZunjm0bgbgV7OtUl2h/eZVGvlzl03+GZiOXxDNwlDdpFOJe/CvIvR2/PMycZividzjBIrZyenP4gfe4KogUezvOUxS7Pc6DH4G3OEsCDuAGUzjEBHbxJpUP47rKtzp8zWM9Teg/vuMzIqnbVL5ZAKurJZH5m8ROGizjBcIZHLSpZVelzvv8hqUc4yu+PNXATuRF12ka2wWIZ7H3Uog/pn8XkVD0OJAH0qzHId+ousfh/A8G06mOaT7CB+ynU32eTPjQS0x1DMlvLKTlzsDFPf6JUVxWfY8zf7W8XJ0MZle6tS2JOzetWh8+PQ6yAAAAAElFTkSuQmCC"/>
+        <label for="subcombo">Subject Combination:</label><br>
+        <small>Format: e.g Biology and Goegraphy, only if the Learner is grade 10,11 or 12</small><br><br>
+        <div class="input-box">
+        <input type="text" id="subcombo" name="subcombo" ><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvtlj8oRXEUxz9PSmKxWFgU2chEmWws2CySTRZKkpB/IUmKRTbJYsNAJpNiEpsoC4vFQlLCPa9z6/Trve6fd3nKe3V7t3PP7/s559zfueeXIk+/VJ64FMC/Vnm31JPAIFCVcASPwCaw6OtacAdwlDDQlWsHTsRowZLtgnq+AmUJBWG1hLHkgmc8w6zCaoBdoDVH+BnQC9yrzpzPsBlbsNjlGtYISyMG8AZMAOvAl14ikREs2QrcrUStZt8cEn6hWd4Zf4GHAu8DA8CTLigCRoF5oCRLAO/ANLDq/X+qTyWwBXSHBYvfMzACbBtQPbAHNDrwK6AHuDH2fmDNK3eFsQWW2uqeAn3AgxqLgXHNTkxShWXgQ59XAztAW4bKRALL+hdPeArYMBulQYWvzb4Y0pYsz/I6IoN9nXPN/tYRrtMsWwI2YGyw6MomEoEVhYxpN2TbdDaWnMC+0KXeNIVss1DtFEErkmsiGUciRunjOMJBa/5WxnYsBkUe97l8C9KHATudOoGDuIoh13UBhy5YBoF80OUk8hNHn2MdPOkBUjjehnxVubv9v1J/AzG/WB9938PnAAAAAElFTkSuQmCC"/>
+        <label for="email">Learners Email:</label><br>
+        <div class="input-box">
+        <input type="email" id="email" name="email" required><br><br>
+       </div>
+
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAArNJREFUSEvNlknIjlEUx3+fKSLKQjLszEpCEkIZFliYCclChoVkWhhSklKGJBR2hjKEshELEQuzpAxRopSETCULw/3rPHW77r3P87699Tmr5zn3nPO/Z75NNBM1NRMujQCeD7QEXgF3gO9VnGkE8A1glIH9Am4De4FTuQvkgDcCq4H9wNaMER/YFxN/GvAhphsDbgscBWZ7CltcOLclwNsBvYAhwEwX7ilAC5N9BowH3oS6IXB74AowPAKyHDhUIX+6xAFgksk+AUYCn3zdEFi5Uohi9BuYC5wJDhcDPYwvD0WyuwtYY//ngRk54DHAtYxXP13xTHYeXPZkrgJj7f8SsAm4Z//ngOn2PRS4X+iFHg9ygg9Lwql2UT6fmpwPLJYiM8KquzvwEmgNHAMWpYA7hblIXGK9hVLHKq7+wApgicnLM3koEuBC4D3QxS4WHSCvgZ4Zrx8A41z+vkRk1L+rjD8QeAxowJww3uAiorF2UuPPSQDfBSZmoiLPBSZSWOVtP1eUqmyR7P4tzhjwAteXxyPAtwz0ayYaCvtFOz8InLZUFDy1WRJYeX4HtAkA+gDPSwqv8nFqZGpQLA2srAX2VLZcIpgCHuDG3yNv9MnMZ8vX24RNVawK6brXx0n43JLwK7QwoMuooj8GFjvbxFNxaciofU7mnM4BdwA0ArsFBsSb6oy/ML7mu4bIsEBumdM9nAIv28caAgqdqtUn7d0jwA5bHMVCCHE2mMw/+GXAUpB3FxKtV6XWtM9XhoJVgKUzz4ZBqypIEZndwDqfXxVYOgqnBoL6vFb65lqxYzGnpVwLsOS7AvuC10mVS2x2G2p7vR77eqOBnbb+yoDPArPqzXHKeG/XvxPscaC3VVj9N63vfzQa2Lent3Vf27kFX9tM+a2rncpCWdd5rcVVF8h/5fEf5YlyH3H474oAAAAASUVORK5CYII="/>
+        <label for="phone">Phone Number Of Learner:</label><br> 
+        <div class="input-box">
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbNJREFUSEvt1jtrFUEUAOAvBtRGIjYBCy20sBBsgoUIEWwsRCyCaSIKNkbyC2zUQvwFKoKCohaKEAgp0ggGQopgYWEjJIUWQhpRbFQQ3YFZWOY+9hnS5HZ3duZ8u2fPnJ0R2/Qb2SZXG3gG//Cyyc03hQP6PIKX8aIu3gQ+h0WMRuwvzmOpDl4XPoll7E2QX5jEWlW8Dnwke7L32D8g+PcsExPYqIJXhcfj0xwqCfoFISubZXgVeB9WcbwsWLz+Eafwc9j8Mng33uJ0RTSftoKz+DNo3TB4F+ZxoSaaT1/AxbjXe0IMgx/jWkM0X3Yfc/1iDIJv4m5LNF8eYt1LY/WDi12pI1tPd0vhtCt1Bfd0tyJ8LCuGD1la9nSlJXF+Z8V6Ap/CeBGexYMtQvOw1/EohUPTD1V8MM66isMtb+QznsYYX/EEIe1Dv8fvYuNvY4cPypk62ynM3YHzjD0rvLd8LNTDlT4p7TTVdzLgdoKE/7d24HhM6qyqtzzVr3Cpz3u7gYfJ+KCu9xrTdffxUUwlJ8pvCFX9Iwk2Fqv6QGE8nDzfYL0u3KZjla4tO3OVBmg64T81F1Af8xlKRAAAAABJRU5ErkJggg=="/>
+        <label for="Address">Address Of Residence:</label><br>
+        <div class="input-box">
+        <input type="text" id="Address" name="Address" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAb1JREFUSEvN1k3ITUEYB/DfK18lJcmOhCyUKCs7lGJhQcpGoXyUlJ0US5LsUD42rFCilLKwYMVCCYWVfKWUkgUbCTN1jt6ue95nzts5XbOd5/x/M819Zu6YEY2xEbkmA0/BNiyvFv0SN/C7zSbawmtwBcsGkFfYiceleBt4Pe5iekP4d2zAoxK8FJ6F95gbhH7AUvyI8FJ4Ly5FYdV8Pv+bUW0pfAH7o7Bq/jQOR7Wl8EXsi8Kq+fM4ENWWwkdxPAqr5o/gVFRbCueefRGFVb28JLXWm6i2FM45l7ErCDyDQxGa59vAM6obanNDcF7YHvzqGq4XugNbxvX0J1zD7RKwrmmz4za5Ye1/Dy/A1nQjrUiPxKLUWlMHtvQz/fDepiN4hlv4GG052vFKnMSmKGhg/k51e+VXa+iYCM431TlMa4nW5fmh2J2e0KvDvm+Ct+P6JMHxn+XW2oh7g1nD4Plppe8wswM4R3zBQuT3+u8YBp/FwY7QOuZYOrITEfw5ne28juEnWD0RvBivO0bruNn41nRz5T9zD3uCc2s+b4LX4n5P8Do8aILnYFVP8FN8bYJ7Mv+Nja7M3hYyMvgPElg8H/XErXYAAAAASUVORK5CYII="/>
+        <label for="fname">First Name Of Parent/Guardian:</label><br>
+        <div class="input-box">
+        <input type="text" id="fname" name="fname" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAb1JREFUSEvN1k3ITUEYB/DfK18lJcmOhCyUKCs7lGJhQcpGoXyUlJ0US5LsUD42rFCilLKwYMVCCYWVfKWUkgUbCTN1jt6ue95nzts5XbOd5/x/M819Zu6YEY2xEbkmA0/BNiyvFv0SN/C7zSbawmtwBcsGkFfYiceleBt4Pe5iekP4d2zAoxK8FJ6F95gbhH7AUvyI8FJ4Ly5FYdV8Pv+bUW0pfAH7o7Bq/jQOR7Wl8EXsi8Kq+fM4ENWWwkdxPAqr5o/gVFRbCueefRGFVb28JLXWm6i2FM45l7ErCDyDQxGa59vAM6obanNDcF7YHvzqGq4XugNbxvX0J1zD7RKwrmmz4za5Ye1/Dy/A1nQjrUiPxKLUWlMHtvQz/fDepiN4hlv4GG052vFKnMSmKGhg/k51e+VXa+iYCM431TlMa4nW5fmh2J2e0KvDvm+Ct+P6JMHxn+XW2oh7g1nD4Plppe8wswM4R3zBQuT3+u8YBp/FwY7QOuZYOrITEfw5ne28juEnWD0RvBivO0bruNn41nRz5T9zD3uCc2s+b4LX4n5P8Do8aILnYFVP8FN8bYJ7Mv+Nja7M3hYyMvgPElg8H/XErXYAAAAASUVORK5CYII="/>
+        <label for="lname">Last Name Of Parent/Guardian:</label><br>
+        <div class="input-box">
+        <input type="text" id="lname" name="lname" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVRJREFUSEvt1U8rBWEUx/HPtbXkBVgrZWFjI/IShAXJiuwIZeXvwk7KXhIleQ1slZ2dnXdhYcE9mqkx3e6/GXdS96lpmqczz/f8zp/n1FS0ahVx9cE9i3w+1OvYw0jJHrzjBJfpuVnwDB5LBuaPm8RzbGbB+/Xvo8QyfZflx0FyUDBC+S/wIVKDsqv9KyMoOP8DvIkdDOMaax3koWvFY3jNgbZwnuytIp7suqp3RzyxugYv4SZ38C2Wk71sfaRmUaA/+SwCrkxxeB053sVQL3PcQR01NO0qx9HTC9jAKAbxhru6+gt8JKjxTLHFVuHiOkNUcKMV198UPjGNp4xRoeKawEuLOG8jnCtVcUyq0xbgGCyzLWy6ynHRwirUx0XhTRX3YizG9DsOFdnxt5i0SFF1zf6fx0MePFDv03vM/RE57vqV9N4ue+C37XMf3HaoihpWFupvB7dbHwdCHX0AAAAASUVORK5CYII="/>
+        <label for="ID no"> ID Number Of Parent/Guardian:</label><br>
+        <div class="input-box">
+        <input type="text" id="ID no" name="ID no" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAV1JREFUSEvt1r8rRlEcx/HXUyw2i01JKaNSBilGk7LYDCbJoiwY/MjvUlKSSZTFn2DCpLBYxMR/YbC4px513Py4z+0+P4bn1B3uud/7eZ/v9/O995ySOo1Snbia4JpVPl3qaSygq+AVvGEdJ1+6MXgY1wUD03IDuA+TMXgJm1UGL2InDV7FSpXBa4l+4HzLuCHBYaXHaC/bMZ6zMhVlfIqpCNSKZ3RHc2fJlxDi0qMP+9FkReC5JNODlOIFJn4STMWN4Cov+ByT0cstCfQJPdXOOOiHxjtKrg5sYawWHudk/PhaZo/fcYjg6Qva0IvZlMeB8ojQD/HI1VwfGMLdLynPYy96dpP8ckMzxSNXc+2WN4y/Sv2A/nJAYRmP4vIfg4NnyxU0QWaPK9DMFNpY4Fpsi4GxHWpT64PAIG7T4HA/g7BZd2ZyLHvQKzZ+O/pklykgsnmuLqCI2STqVupPwgZLHztQ6ooAAAAASUVORK5CYII="/>
+        <label for="medsch">Medical Aid Scheme:</label><br>
+        <div class="input-box">
+        <input type="text" id="medsch" name="medsch" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAKJJREFUSEtjZBggwDhA9jKQanECAwODAg7HPgDKLSDWI6RafICBgcEeh+EHGRgYHEYtxhUCo0FNKG2MJi7kECI7O4EKBxDGBwwYGBj4cSj4yMDAcIGAflABAy5kkFN1AwMDQz2hSKZQvhGoH2TPqMWjQU1hUsLUjjVxDVh2IsZ7o0UmVYrM0aDGFgKjiYtuiWvAGvTEpHyi1JDavCXKUGIUAQDsOzgf6R1hjwAAAABJRU5ErkJggg=="/>
+        <label for="med">Medical Card Number:</label><br>
+        <div class="input-box">
+        <input type="text" id="med" name="med" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAArlJREFUSEvFlluIjlEUhp9xiqSEyaFEzuVKIqKUXKLkgiuhFCkhhJqUUyQhUhQlFwp3uOKC5JCQU+RULhAhLhwS4nuntf/2v9vf3t/8M5pVU9P/7bXedXzXaqKTpKmTcGkrcBdgMjACGGJOvwVeAreAv1UDqQo8DNgMzAf6lxj/AJwFdgKvcw7kgHsALcCGwqD+ryI/gR3mwJ8yhRTwYOBc8TexClrkzRXL0KeYfhnwcOAGMKhBUKem2k8BPoZ2YsB9gdvAyHaCOvW7wHTgh28vBnwcWJIB/Q08tTfjgK6Z97uBjSngscATSI7ZGWAF4Go3oBito8C8BPh3QOVT57dKGLEMLEsYUNo0x2G3quPvA4q+TLYWc74lBqx0fQb6JJRXAodLvq8tdPcmdFWammN+xDOAy5lazQYulLzRN41fSsYAz8NULwJOZBTXAPsbjFhqc51zfsTrgD0Z4EfABEBd7Us34DEwOqO/GjgQRpyrkbN5Glhu/aDfmoEjma52usLYFwIvBE5lPHafFbHGrrtFmZtjp7cAkON14yRqE03+T5lkrFgHrF37zlIXA9euFfGrqxXtN3vUGxgPzDFqLHP8DTDU7eyQQDSjYqVQ7gGLjSRSGVFEJ4uSiQFDUW1V41YJgUdZNOpSJ+8touh6iwDoMnkI9PO+/bKrpXYgxJbEMWCpp/QFmFWk8k7F4mt/XyrmXVvOyUFgla8fA5anN4OZ/ApsBw55tQ39ENXK+KaCD1R3Jw+AaYBs1KTsENAxdx0YGFjXlrkIXAOe2TrU3hbdzgR6Be9f2SGgctVJ6vRRrc4bU1XMct2zq0YqbTp9nIWetsrWV1j2TkfH3jZgV2R9ZlMdRigOVu207P2m8d8pnToSdG20+7wNHRA1TgV0Z+sKFanooH9hjNThB30jNU7q5A76Dgd0Bv8BIyR2H9l/W1MAAAAASUVORK5CYII="/>
+        <label for="Main mem">Name Of The Main Member:</label><br>
+        <div class="input-box">
+        <input type="text" id="Main mem" name="Main mem" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAKJJREFUSEtjZBggwDhA9jKQanECAwODAg7HPgDKLSDWI6RafICBgcEeh+EHGRgYHEYtxhUCo0FNKG2MJi7kECI7O4EKBxDGBwwYGBj4cSj4yMDAcIGAflABAy5kkFN1AwMDQz2hSKZQvhGoH2TPqMWjQU1hUsLUjjVxDVh2IsZ7o0UmVYrM0aDGFgKjiYtuiWvAGvTEpHyi1JDavCXKUGIUAQDsOzgf6R1hjwAAAABJRU5ErkJggg=="/>
+        <label for="Mem no">Member Number:</label><br>
+        <div class="input-box">
+        <input type="text" id="Mem no" name="Mem no" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAR1JREFUSEvtljsKwkAQhr+IvUewEAvFzgP4KCzEQrAWvIl6FltBLKzVM4haeRTRjCSwrCH7MBIVAymy+bPfzOyf2Q3I6Qpy4uIDrgIDoGQR9A04AGvgqupdwT1gAxQtoKpkC3RfAS/DDEaO0FjeAI7xg2vGO6DlCe4A8v3j+lrwPEqgrVQiaUxkmWYcV2wGTLUqqmO/A3bxWaalzhQs69YHmkBBm3kClA00b3OtgKFLKpo2yXBGc9XV7uIJ9wLL/yh99SlCLQhVZxtfqrk+CizByC1b3D7qt2kZe5krKWPTmF7qzNY4N3CSeX7bXP+MpQJvXWPbjmSrS+1cNeBkO5OjTvaBc9phbwxUHCc1yS/hnAtV5HrKNAGs3+cGvgMVuF0fC8qG9AAAAABJRU5ErkJggg=="/>
+        <label for="emp">Place of Employment:</label><br>
+        <div class="input-box">
+        <input type="text" id="emp" name="emp" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAT1JREFUSEvt1r0uBVEQB/Df1Wo8gfiqtB4ArUqCiAaFykP4egelhEQhItFp0WsVCh/xDqLDnmvJ2liG3M0l957kFJv9z/8/M2fOnGlo02q0SVdUOOGmMIaeCmefcIGTSDBR4WNMRwhxgIXvsBHhUVx+R1T6P4Lrr2wiwhM4zUkmcVZBGMU1zf+McC9mMViIagBL+fce7ioi/gp3i0M8vtkWI+7Lq3L4h+cZhV/lt+KhnOpVbEdZfolbwU5ZeAPrvySMmm1mwKTzobg6T3g5q9i061y7SDt0j2txpHidomf8XiAFj35s+6+Ezz/p16lPjwfOpHudmkmKFkggo5WQbqqbqVnLGkpKRZ0rPUJb5c41nw9qdQrP4agsnMbWNCXM1KS8j8Xs6X2u6tVD6G+x+A3ui5yRYa/FPrzSdZ7wC6A3Qh9ayb2pAAAAAElFTkSuQmCC"/>
+        <label for="occ">Occupation:</label><br>
+        <div class="input-box">
+        <input type="text" id="occ" name="occ" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvtlj8oRXEUxz9PSmKxWFgU2chEmWws2CySTRZKkpB/IUmKRTbJYsNAJpNiEpsoC4vFQlLCPa9z6/Trve6fd3nKe3V7t3PP7/s559zfueeXIk+/VJ64FMC/Vnm31JPAIFCVcASPwCaw6OtacAdwlDDQlWsHTsRowZLtgnq+AmUJBWG1hLHkgmc8w6zCaoBdoDVH+BnQC9yrzpzPsBlbsNjlGtYISyMG8AZMAOvAl14ikREs2QrcrUStZt8cEn6hWd4Zf4GHAu8DA8CTLigCRoF5oCRLAO/ANLDq/X+qTyWwBXSHBYvfMzACbBtQPbAHNDrwK6AHuDH2fmDNK3eFsQWW2uqeAn3AgxqLgXHNTkxShWXgQ59XAztAW4bKRALL+hdPeArYMBulQYWvzb4Y0pYsz/I6IoN9nXPN/tYRrtMsWwI2YGyw6MomEoEVhYxpN2TbdDaWnMC+0KXeNIVss1DtFEErkmsiGUciRunjOMJBa/5WxnYsBkUe97l8C9KHATudOoGDuIoh13UBhy5YBoF80OUk8hNHn2MdPOkBUjjehnxVubv9v1J/AzG/WB9938PnAAAAAElFTkSuQmCC"/>
+        <label for="email">Parent/Guardian Email:</label><br>
+        <div class="input-box">
+        <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAArNJREFUSEvNlknIjlEUx3+fKSLKQjLszEpCEkIZFliYCclChoVkWhhSklKGJBR2hjKEshELEQuzpAxRopSETCULw/3rPHW77r3P87699Tmr5zn3nPO/Z75NNBM1NRMujQCeD7QEXgF3gO9VnGkE8A1glIH9Am4De4FTuQvkgDcCq4H9wNaMER/YFxN/GvAhphsDbgscBWZ7CltcOLclwNsBvYAhwEwX7ilAC5N9BowH3oS6IXB74AowPAKyHDhUIX+6xAFgksk+AUYCn3zdEFi5Uohi9BuYC5wJDhcDPYwvD0WyuwtYY//ngRk54DHAtYxXP13xTHYeXPZkrgJj7f8SsAm4Z//ngOn2PRS4X+iFHg9ygg9Lwql2UT6fmpwPLJYiM8KquzvwEmgNHAMWpYA7hblIXGK9hVLHKq7+wApgicnLM3koEuBC4D3QxS4WHSCvgZ4Zrx8A41z+vkRk1L+rjD8QeAxowJww3uAiorF2UuPPSQDfBSZmoiLPBSZSWOVtP1eUqmyR7P4tzhjwAteXxyPAtwz0ayYaCvtFOz8InLZUFDy1WRJYeX4HtAkA+gDPSwqv8nFqZGpQLA2srAX2VLZcIpgCHuDG3yNv9MnMZ8vX24RNVawK6brXx0n43JLwK7QwoMuooj8GFjvbxFNxaciofU7mnM4BdwA0ArsFBsSb6oy/ML7mu4bIsEBumdM9nAIv28caAgqdqtUn7d0jwA5bHMVCCHE2mMw/+GXAUpB3FxKtV6XWtM9XhoJVgKUzz4ZBqypIEZndwDqfXxVYOgqnBoL6vFb65lqxYzGnpVwLsOS7AvuC10mVS2x2G2p7vR77eqOBnbb+yoDPArPqzXHKeG/XvxPscaC3VVj9N63vfzQa2Lent3Vf27kFX9tM+a2rncpCWdd5rcVVF8h/5fEf5YlyH3H474oAAAAASUVORK5CYII="/>
+        <label for="phone">Phone Number Of Parent/Guardian:</label><br>
+        <div class="input-box">
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        </div>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAKJJREFUSEtjZBggwDhA9jKQanECAwODAg7HPgDKLSDWI6RafICBgcEeh+EHGRgYHEYtxhUCo0FNKG2MJi7kECI7O4EKBxDGBwwYGBj4cSj4yMDAcIGAflABAy5kkFN1AwMDQz2hSKZQvhGoH2TPqMWjQU1hUsLUjjVxDVh2IsZ7o0UmVYrM0aDGFgKjiYtuiWvAGvTEpHyi1JDavCXKUGIUAQDsOzgf6R1hjwAAAABJRU5ErkJggg=="/>
+        <label for="phone">Phone Number Of Emergency Contact:</label><br>
+        <div class="input-box">
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        </div>
+
+        
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>
